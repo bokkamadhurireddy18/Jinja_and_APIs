@@ -24,7 +24,7 @@ def guess(uname):
     return render_template("index.html", uname=uname, gender= gender, age= age)
 
 @app.route("/blog")
-def blog():
+def get_blog():
     #this blog is a list of 3 dictionaries.
     blog_url = 'https://api.npoint.io/c790b4d5cab58020d391'
     response = requests.get(blog_url)
